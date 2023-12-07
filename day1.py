@@ -37,7 +37,7 @@ def task_two():
         first = ''
         last = ''
         for key, value in digits.items():
-            line = line.replace(key, f"{key[0]}{value}{key[-1]}")
+            line = line.replace(key, f"{key[0]}{value}{key[-1]}") # replace numbers with actual digit, and add a separator before and after, to avoid conflict
         for ch in line:
             if ch.isnumeric():
                 if len(first) == 0:
